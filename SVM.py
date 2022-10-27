@@ -10,7 +10,7 @@ Categories = ["Cheetah", "Jaguar", "Leopard", "Lion", "Tiger"]
 flat_data_arr = []  # input array
 target_arr = []  # output array
 print(os.path.realpath(__file__))
-datadir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'FeatureSelectedImgs')
+datadir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'imgs')
 # path which contains all the categories of images
 for i in Categories:
 

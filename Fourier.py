@@ -34,7 +34,7 @@ def normalize_data(data, width, height, negative=True):
 
 
 def load_images(cls):
-    path = "../Data-PR-As2/BigCats"
+    path = "../BigCats"
     folder = ["Cheetah", "Jaguar", "Leopard", "Lion", "Tiger"]
     image_path = []
     # for i in range(5):
@@ -82,7 +82,7 @@ def display_plots(individual_grating, reconstruction, idx, image_filename,  cls)
     plt.axis("off")
     plt.suptitle(f"Terms: {idx}")
     plt.pause(0.01)
-    cv2.imwrite(os.path.join(dir_path, cls, "resized"+image_filename), reconstruction)
+    cv2.imwrite(os.path.join(dir_path, 'imgs',  cls, "resized"+image_filename), reconstruction)
     # img.show()
     # plt.figure(reconstruction)
     # plt.savefig(os.path.join(dir_path, cls, "resized"+image_filename))
